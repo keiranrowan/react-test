@@ -1,0 +1,18 @@
+[client]
+
+[client.http]
+host = "0.0.0.0"
+port = 443
+tls = true
+tls_cert = "certs/app.crt"
+tls_key = "certs/app.key"
+
+[server]
+
+[server.http]
+host = "0.0.0.0"
+port = 9000
+tls = true
+tls_cert = "certs/app.crt"
+tls_key = "certs/app.key"
+
