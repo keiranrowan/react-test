@@ -1,0 +1,14 @@
+[Unit]
+Description=React Testing Daemon Server
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=rowank
+ExecStart=/usr/local/bin/react-test daemon start
+
+[Install]
+WantedBy=multi-user.target

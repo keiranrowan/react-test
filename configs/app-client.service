@@ -1,0 +1,14 @@
+[Unit]
+Description=React Testing Client Web Server
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=centos
+ExecStart=/usr/local/bin/react-test client start
+
+[Install]
+WantedBy=multi-user.target
